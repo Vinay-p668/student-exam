@@ -37,6 +37,68 @@ Hey there! This is a simple app for students to register, log in, and take a Jav
 - Postman  (API testing)
 
 ### Setup
-```bash
-cd C:\Users\vinnu\OneDrive\Desktop\Web development\Student Exam
-echo. > README.md
+**Clone the repo** (after pushing):
+   ```bash
+   git clone https://github.com/Vinay-p668/student-exam.git
+   cd student-exam
+
+**Install dependencies**
+    ```bash
+    npm install
+
+**Set up environment variables**
+   Create a .env file:
+    MONGO_URI= use local host if using mongoDB in localStorage..
+   JWT_SECRET=your_jwt_secret_key
+   PORT=2800 or ANY(chace API _URL in froentend if PORT NO is changed)
+
+For MongoDB Atlas:  use your connection string avaiable in MongoDB Atlas.
+
+**Build Tailwind CSS**
+   ```bash
+    npm run build:css
+
+  Creates public/css/styles.css. If input.css is missing:
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+**Start the server**
+   ```bash
+     npm start
+
+**MongoDB Setup
+   Option 1: Local MongoDB
+             Ensure MongoDB is running (mongod).
+             Open MongoDB shell:
+             ```bash
+              mongo
+   Import questions (see questions.json for full list)
+
+    Option 2: MongoDB Atlas
+              Log in to Atlas, choose  exam_db .
+              Import questions.json:Collections > exam_db > questions > Add Data > Import                   File.
+              Select questions.json, choose JSON format, and import.
+
+
+  **API Testing**
+      Using Postman :
+         Import postman/postman_collection.json.
+         Set API_URL to http://localhost:2800 or(ANY).
+         Run:Register User: Create a user (e.g., {"username": "testuser", "password":                 "password123"}).
+         Login User: Get a JWT token, set as TOKEN.
+         Get Exam Questions: Fetch 5 questions (needs Bearer {{TOKEN}}).
+         Submit Exam: Submit answers ( ["var", "object", "push()", "function myFunc() {}",            "Value and type"]).
+
+
+
+
+
+
+
+
+
+
+
+
+
