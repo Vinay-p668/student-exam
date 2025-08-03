@@ -1,0 +1,112 @@
+{
+  "info": {
+    "name": "Student Exam Module",
+    "_postman_id": "student-exam-module",
+    "description": "API collection for testing the Student Exam Module on port 2800.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"vinay\", \"password\": \"vinay\"}"
+        },
+        "url": {
+          "raw": "{{API_URL}}/api/auth/register",
+          "host": ["{{API_URL}}"],
+          "path": ["api", "auth", "register"]
+        },
+        "description": "Register a new user."
+      },
+      "response": []
+    },
+    {
+      "name": "Login User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\": \"vinayy\", \"password\": \"vinay\"}"
+        },
+        "url": {
+          "raw": "{{API_URL}}/api/auth/login",
+          "host": ["{{API_URL}}"],
+          "path": ["api", "auth", "login"]
+        },
+        "description": "Log in to get a JWT token."
+      },
+      "response": []
+    },
+    {
+      "name": "Get Exam Questions",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{TOKEN}}"
+          }
+        ],
+        "url": {
+          "raw": "{{API_URL}}/api/exam/questions",
+          "host": ["{{API_URL}}"],
+          "path": ["api", "exam", "questions"]
+        },
+        "description": "Fetch 5 random JavaScript questions (requires JWT)."
+      },
+      "response": []
+    },
+    {
+      "name": "Submit Exam",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{TOKEN}}"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"answers\": [\"var\", \"object\", \"push()\", \"function myFunc() {}\", \"Value and type\"]}"
+        },
+        "url": {
+          "raw": "{{API_URL}}/api/exam/submit",
+          "host": ["{{API_URL}}"],
+          "path": ["api", "exam", "submit"]
+        },
+        "description": "Submit exam answers (requires JWT)."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "API_URL",
+      "value": "http://localhost:2800"
+    },
+    {
+      "key": "TOKEN",
+      "value": "LeadMasters"
+    }
+  ]
+}

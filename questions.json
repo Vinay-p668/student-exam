@@ -1,0 +1,117 @@
+[
+  {
+    "text": "Which keyword is used to declare a variable in JavaScript?",
+    "options": ["var", "int", "string", "declare"],
+    "correctAnswer": "var"
+  },
+  {
+    "text": "What is the output of `typeof null` in JavaScript?",
+    "options": ["null", "object", "undefined", "string"],
+    "correctAnswer": "object"
+  },
+  {
+    "text": "Which method adds an element to the end of an array?",
+    "options": ["push()", "pop()", "shift()", "unshift()"],
+    "correctAnswer": "push()"
+  },
+  {
+    "text": "How do you define a function in JavaScript?",
+    "options": [
+      "function myFunc() {}",
+      "def myFunc() {}",
+      "func myFunc() {}",
+      "myFunc() => {}"
+    ],
+    "correctAnswer": "function myFunc() {}"
+  },
+  {
+    "text": "What does `===` operator check in JavaScript?",
+    "options": [
+      "Value only",
+      "Type only",
+      "Value and type",
+      "Reference only"
+    ],
+    "correctAnswer": "Value and type"
+  },
+  {
+    "text": "Which event is triggered when a user clicks an HTML element?",
+    "options": ["onchange", "onclick", "onmouseover", "onload"],
+    "correctAnswer": "onclick"
+  },
+  {
+    "text": "What is the purpose of `let` in JavaScript?",
+    "options": [
+      "Declares a block-scoped variable",
+      "Declares a global variable",
+      "Declares a constant",
+      "Declares a function"
+    ],
+    "correctAnswer": "Declares a block-scoped variable"
+  },
+  {
+    "text": "What does `Array.prototype.map()` do?",
+    "options": [
+      "Modifies the original array",
+      "Creates a new array with transformed elements",
+      "Removes elements from an array",
+      "Sorts the array"
+    ],
+    "correctAnswer": "Creates a new array with transformed elements"
+  },
+  {
+    "text": "What is a closure in JavaScript?",
+    "options": [
+      "A loop that never ends",
+      "A function with access to its outer scope variables",
+      "A method to close a browser tab",
+      "A way to lock variables"
+    ],
+    "correctAnswer": "A function with access to its outer scope variables"
+  },
+  {
+    "text": "Which method converts a JSON string to a JavaScript object?",
+    "options": [
+      "JSON.parse()",
+      "JSON.stringify()",
+      "JSON.toObject()",
+      "JSON.convert()"
+    ],
+    "correctAnswer": "JSON.parse()"
+  },
+  {
+    "text": "What is the output of `console.log(0 == '0')`?",
+    "options": ["true", "false", "undefined", "null"],
+    "correctAnswer": "true"
+  },
+  {
+    "text": "Which object is used to manipulate the browser’s Document Object Model (DOM)?",
+    "options": ["window", "document", "navigator", "console"],
+    "correctAnswer": "document"
+  },
+  {
+    "text": "What does `setTimeout` do in JavaScript?",
+    "options": [
+      "Executes a function immediately",
+      "Delays a function execution",
+      "Repeats a function indefinitely",
+      "Stops a function"
+    ],
+    "correctAnswer": "Delays a function execution"
+  },
+  {
+    "text": "What is the purpose of `const` in JavaScript?",
+    "options": [
+      "Declares a block-scoped variable that can be reassigned",
+      "Declares a block-scoped constant that cannot be reassigned",
+      "Declares a global variable",
+      "Declares a function"
+    ],
+    "correctAnswer": "Declares a block-scoped constant that cannot be reassigned"
+  },
+  {
+    "text": "Which method removes the last element from an array?",
+    "options": ["push()", "pop()", "shift()", "slice()"],
+    "correctAnswer": "pop()"
+  }
+]

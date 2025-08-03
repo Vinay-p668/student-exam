@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-4">
+  <div class="max-w-2xl mx-auto bg-white p-6 rounded shadow">
+    <div class="flex justify-between mb-4">
+      <h2 class="text-xl">Exam</h2>
+      <div>Time Left: <span id="timer">30:00</span></div>
+    </div>
+    <div id="questionContainer"></div>
+    <div class="flex justify-between mt-4">
+      <button id="prevBtn" class="bg-gray-500 text-white p-2 rounded" disabled>Previous</button>
+      <button id="nextBtn" class="bg-blue-500 text-white p-2 rounded">Next</button>
+      <button id="submitBtn" class="bg-green-500 text-white p-2 rounded hidden">Submit Exam</button>
+    </div>
+  </div>
+  <script src="/js/exam.js"></script>
+</body>
+</html>
