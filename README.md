@@ -37,6 +37,6 @@ Hey there! This is a simple app for students to register, log in, and take a Jav
 - Postman  (API testing)
 
 ### Setup
-   ```bash
-   git clone https://github.com/Vinay-p668/student-exam.git
-   cd student-exam
+```bash
+cd C:\Users\vinnu\OneDrive\Desktop\Web development\Student Exam
+echo. > README.md
