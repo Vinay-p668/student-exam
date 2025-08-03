@@ -10,6 +10,20 @@ Hey there! This is a simple app for students to register, log in, and take a Jav
 - View your score and answers on the results page.
 - Stores users and questions in MongoDB (Atlas).
 
+## What It Does
+
+ ![Student Exam ](https://github.com/Vinay-p668/student-exam/blob/master/images/login.png)
+
+ ![Student Exam ](https://github.com/Vinay-p668/student-exam/blob/master/images/exam.png)
+
+ ![Student Exam ](https://github.com/Vinay-p668/student-exam/blob/master/images/result.png)
+
+
+
+ 
+
+
+
 ## Tech Stack
 - **Frontend**: HTML, CSS, JavaScript, Tailwind CSS
 - **Backend**: Node.js, Express.js, MongoDB (Mongoose)
